@@ -19,7 +19,7 @@ class CreateTaskAssignmentTable extends Migration
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
             $table->foreignId('task_id')
-                ->constrained('task')
+                ->constrained('tasks')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
             $table->timestamp('created_at');
